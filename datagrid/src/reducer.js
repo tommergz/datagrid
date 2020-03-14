@@ -11,8 +11,6 @@ const sortFunction = (data, type) => {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'RND':
-      return state + action.payload;
 
     case 'SORT':
       return {
@@ -20,9 +18,6 @@ const reducer = (state = initialState, action) => {
         data: sortFunction(state.data, action.payload)
       }
 
-    case 'DEC': 
-      return state -1;  
-    
     default: 
       return state;  
   }
