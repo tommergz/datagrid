@@ -9,7 +9,7 @@ import { composeWithDevTools } from "redux-devtools-extension";
 
 const store = createStore(
   reducer,
-  applyMiddleware(applyMiddleware(thunk))
+  composeWithDevTools(applyMiddleware(thunk))
 );
 
 ReactDOM.render(

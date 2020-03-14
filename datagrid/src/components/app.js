@@ -1,8 +1,8 @@
 import React from 'react';
-import Counter from './counter';
+import Table from './table';
 
 const App = () => {
-  return <Counter />;
+  return <Table />;
 };
 
 export default App;

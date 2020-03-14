@@ -1,4 +1,7 @@
-export const inc = () => ({type: 'INC'});
+export const sorting = (type) => ({
+  type: 'SORT',
+  payload: type
+});
 
 export const dec = () => ({type: 'DEC'});
 
