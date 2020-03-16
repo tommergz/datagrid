@@ -6,7 +6,7 @@ const makeFake = (idx) => {
     "rank": 0,
     "name": faker.name.findName(),
     "githubId": faker.internet.email(),
-    "totalScore": Math.floor(Math.random() *1000),
+    "totalScore": Math.floor(Math.random() *1000) + 1,
     "locationName": faker.address.city(),
     "taskResults": Math.floor(Math.random() *10),
     "isActive": faker.random.boolean()  
